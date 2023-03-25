@@ -1,0 +1,384 @@
+/*! VAR  */
+:root {
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --text-white-color: #ffffff;
+  --light-logo-color: #f4f4fd;
+  --secondary-bgc-color: #f4f4fd;
+  --dark-logo-color: #2e2f42;
+  --main-logo-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --hero-bgk-color: #2e2f42;
+  --border-color: #e7e9fc;
+}
+
+/* Global style reset*/
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* /Global style reset*/
+
+/*! ============================Repeat COMPONENTS=========== */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--text-white-color);
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subtitle {
+  color: var(--secondary-text-color);
+}
+
+.employees-heading,
+.project-heading {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.headline {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.text,
+.menu-link,
+.adress-mail,
+.adress-phone {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.headline {
+  margin-bottom: 8px;
+}
+
+.employees-img {
+  margin-bottom: 32px;
+}
+
+.employees-item {
+  padding-bottom: 32px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*! ===============================/Repeat COMPONENTS=========== */
+
+/*? ================================Header CSS=========== */
+
+.header {
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 76px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-logo-color);
+  text-transform: uppercase;
+}
+
+.header .logo-letter {
+  color: var(--secondary-text-color);
+}
+
+/* Навігаційні посилання */
+
+.navigation .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-item:not(:last-child) {
+  padding-right: 40px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.contact:hover,
+.contact:focus {
+  color: var(--hover-color);
+}
+
+.adress-link {
+  color: var(--primary-text-color);
+}
+
+.adress-item:not(:last-child) {
+  margin-right: 40px;
+}
+/*? ===============================/Header CSS=========== */
+
+/*! ==================================MAIN========================================= */
+
+/*TODO ==================================Hero CSS=========== */
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
+  background-color: var(--hero-bgk-color);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--text-white-color);
+  margin-bottom: 48px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+
+  background-color: var(--main-logo-color);
+  padding: 16px 32px;
+  gap: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  color: var(--text-white-color);
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--text-white-color);
+}
+
+/*TODO ===================================/Hero CSS========= */
+
+/* ===============FEATURE - About Company  */
+.feature {
+  padding-top: 120px;
+  padding-bottom: 0;
+}
+
+.feature-list {
+  justify-content: space-between;
+}
+
+.feature-item {
+  width: 264px;
+}
+
+/* =============== /FEATURE - About Company  */
+
+/*! ================Section 2 - What are we doing */
+
+.project-heading {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.project-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*! ===========/Section 2 - What are we doing */
+
+/*======= Section 3 - Our team ======*/
+
+.employees-heading {
+  margin-bottom: 72px;
+}
+
+.employees {
+  background-color: var(--secondary-bgc-color);
+  text-align: center;
+}
+
+.employees-item {
+  background-color: var(--text-white-color);
+}
+
+/* CETKA */
+.employees-list {
+  gap: 24px;
+}
+
+.employees-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+/* ========Section 3 - Our team ======*/
+/*! ==================================/MAIN================================================== */
+
+/*? ==================================FOOTER=========== */
+
+.footer .logo-letter,
+.footer-text {
+  color: var(--light-logo-color);
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: var(--dark-logo-color);
+}
+
+.footer-text {
+  width: 264px;
+}
+/*? ==================================/FOOTER=========== */
+
+/* ============================Portfolio================ */
+
+.filters {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filters-list {
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.filters-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.filters-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  padding: 12px 24px;
+  background: var(--light-logo-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  color: var(--main-logo-color);
+}
+
+.filters-btn:focus,
+.filters-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--text-white-color);
+}
+
+.img-border {
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+/* CETKA */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+/*========================== /Portfolio ==================*/
+/*!== END ==*/
