@@ -355,6 +355,11 @@ body {
   height: 88px;
   border: 1px solid var(--border-icon-color);
   border-radius: 4px;
+  color: var(--border-icon-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 .clients-list {
@@ -363,18 +368,10 @@ body {
   justify-content: space-between;
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--border-icon-hover);
-}
-
-.clients-icon {
-  fill: var(--border-icon-color);
-}
-
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--border-icon-hover);
+  color: var(--border-icon-hover);
 }
 
 /*? ==================================FOOTER=========== */
@@ -476,5 +473,5 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-/* git terminal */
+
 /*!== END ==*/
