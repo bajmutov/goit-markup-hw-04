@@ -1,4 +1,5 @@
 /*! VAR  */
+
 :root {
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
@@ -16,6 +17,7 @@
 }
 
 /* Global style reset*/
+
 h1,
 h2,
 h3,
@@ -45,8 +47,6 @@ img {
 button {
   cursor: pointer;
 }
-
-/* /Global style reset*/
 
 /*! ============================Repeat COMPONENTS=========== */
 
@@ -132,13 +132,9 @@ body {
   flex-wrap: wrap;
 }
 
-/*! ===============================/Repeat COMPONENTS=========== */
-
 /*? ================================Header CSS=========== */
 
 .header {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -169,7 +165,6 @@ body {
 }
 
 /* Навігаційні посилання */
-
 .navigation .link {
   display: block;
   padding-top: 24px;
@@ -202,11 +197,11 @@ body {
 .adress-item:not(:last-child) {
   margin-right: 40px;
 }
-/*? ===============================/Header CSS=========== */
 
 /*! ==================================MAIN========================================= */
 
-/*TODO ==================================Hero CSS=========== */
+/*TODO =================Hero CSS=========== */
+
 .hero {
   max-width: 1440px;
   margin: 0 auto;
@@ -256,9 +251,8 @@ body {
   color: var(--text-white-color);
 }
 
-/*TODO ===================================/Hero CSS========= */
-
 /* ===============FEATURE - About Company  */
+
 .feature {
   padding-top: 120px;
   padding-bottom: 0;
@@ -279,8 +273,6 @@ body {
   border-radius: 4px;
 }
 
-/* =============== /FEATURE - About Company  */
-
 /*! ================Section 2 - What are we doing */
 
 .project-heading {
@@ -292,8 +284,6 @@ body {
 .project-item:not(:last-child) {
   margin-right: 24px;
 }
-
-/*! ===========/Section 2 - What are we doing */
 
 /*======= Section 3 - Our team ======*/
 
@@ -346,8 +336,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* ========Section 3 - Our team ======*/
-
 /*TODO <!-- Section 4 - Clients--> */
 
 .clients-heading {
@@ -389,10 +377,6 @@ body {
   border: 1px solid var(--border-icon-hover);
 }
 
-/*TODO <!-- //Section 4 - Clients--> */
-
-/*! ==================================/MAIN================================================== */
-
 /*? ==================================FOOTER=========== */
 
 .footer .logo-letter,
@@ -425,8 +409,8 @@ body {
   gap: 16px;
   margin-top: 16px;
 }
-/*? ==================================/FOOTER=========== */
 
+/* Page 2 */
 /* ============================Portfolio================ */
 
 .filters {
@@ -492,5 +476,5 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-/*========================== /Portfolio ==================*/
+
 /*!== END ==*/
