@@ -266,10 +266,17 @@ body {
 
 .feature-list {
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-.feature-item {
+.thumb-icon {
   width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-logo-color);
+  border-radius: 4px;
 }
 
 /* =============== /FEATURE - About Company  */
@@ -286,12 +293,6 @@ body {
   margin-right: 24px;
 }
 
-.thumb-icon {
-  padding: 24px 100px;
-  margin-bottom: 8px;
-  background-color: var(--light-logo-color);
-}
-
 /*! ===========/Section 2 - What are we doing */
 
 /*======= Section 3 - Our team ======*/
@@ -302,7 +303,6 @@ body {
 
 .employees {
   background-color: var(--secondary-bgc-color);
-  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
 }
@@ -365,7 +365,7 @@ body {
   align-items: center;
   width: 168px;
   height: 88px;
-  border: 2px solid var(--border-icon-color);
+  border: 1px solid var(--border-icon-color);
   border-radius: 4px;
 }
 
@@ -386,7 +386,7 @@ body {
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 2px solid var(--border-icon-hover);
+  border: 1px solid var(--border-icon-hover);
 }
 
 /*TODO <!-- //Section 4 - Clients--> */
@@ -461,10 +461,7 @@ body {
 .filters-btn:hover {
   background-color: var(--hover-color);
   color: var(--text-white-color);
-}
 
-.filters-item:focus,
-.filters-item:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
